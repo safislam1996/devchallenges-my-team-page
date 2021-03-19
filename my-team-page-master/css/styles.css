@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text {
+
+  width: 70vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  grid-gap: 200px;
+  align-items: center;
+}
+
+.company {
+  font-family: 'PT Serif', serif;
+  font-size: 36px;
+  line-height: 47.7px;
+  width: 278px;
+  height: 47px;
+  letter-spacing: -0.045em;
+}
+
+.about-us h4 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  text-transform: uppercase;
+}
+
+.about-us p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.image-grid {
+  width: 70vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  margin-top: 100px;
+}
+
+img {
+  width: 238px;
+  margin-top: 30px;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+.name {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 10px;
+  padding-left: 30px;
+}
+
+.post {
+  position: relative;
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+
+  left: 30px;
+  top: -102px;
+  text-transform: uppercase;
+  color: #000000;
+  transform: rotate(90deg);
+}
+
+.image-2 {
+  margin-top: 100px;
+}
+
+.image-5 {
+  margin-top: 100px;
+}
+
+
+
+.footer {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #A9A9A9;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+@media screen and (max-width:600px) {
+  .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1rem;
+    column-gap: -10px;
+    align-content: center;
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    justify-content: space-around;
+    margin: 2rem;
+
+
+  }
+  .position{
+    position: static;
+    right: 100px;
+  }
+
+}
